@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="GroupAssignment.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body {
+        background-image: url('photos/coffeebackgroundd.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; /* Adjust as needed */
+        background-position: center center; /* Adjust as needed */
+        font-family: Tahoma, sans-serif;
+        font-weight: bold;
+}
+        .auto-style1 {
+            width: 900px;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+        .auto-style3 {
+            height: 23px;
+                background-color: #8B4513; /* Adjust the color code for the desired coffee shop vibe */
+    padding: 20px;
+    color: #FFF; /* Set the text color for better visibility */
+    width: 1395px;
+    margin: 0 auto;
+    border: 3px solid #8B4513; /* Border color to match the background color */
+        }
+        .copyright-container {
+            text-align: right;
+        }
+        .auto-style4 {
+            width: 85%;
+            color: #FFF;
+        }
+        .auto-style5 {
+            height: 23px;
+            background-color: #8B4513; /* Adjust the color code for the desired coffee shop vibe */
+            padding: 20px;
+            color: #FFF; /* Set the text color for better visibility */
+            width: 1395px;
+            margin: 0 auto;
+            border: 3px solid #8B4513;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table align="center" class="auto-style1">
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Photos/CoffeeShop.png" />
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style5">
+                                                <asp:LinkButton ID="Home" runat="server" OnClick="LinkButton1_Click" ForeColor="White">Home</asp:LinkButton>
+&nbsp;&nbsp;
+                        <asp:LinkButton ID="Order" runat="server" OnClick="LinkButton2_Click" ForeColor="White">Order</asp:LinkButton></td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3" >&nbsp;&nbsp;
+                        <a href="WebForm1.aspx" style="color: white;">Home</a>
+&nbsp;&nbsp;
+                        <a href="CrushCoffeeOrder.aspx" style="color: white;">Order</a>
+                        <span style="text-align: right; display: inline-block; " class="auto-style4">@Copyright 2024. All Rights Reserved.</span></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

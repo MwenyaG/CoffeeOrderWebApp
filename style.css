@@ -1,0 +1,37 @@
+﻿body {
+    background-image: url('photos/coffeebackgroundd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust as needed */
+    background-position: center center; /* Adjust as needed */
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.opacity-box1 {
+    background-color: rgb(92, 64, 51); /* Brown background color with alpha for opacity */
+    padding: 20px;
+    color: #FFF;
+    width: fit-content;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    /* Hover effect for interactive feel */
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+    /* Apply hover effect */
+    .opacity-box1:hover {
+        background-color: rgb(72, 60, 50); /* Darker brown background on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    }
+
+
+.opacity-box2 {
+    background-color: #8B4513; /* Adjust the color code for the desired coffee shop vibe */
+    padding: 20px;
+    color: #FFF; /* Set the text color for better visibility */
+    width: fit-content;
+    margin: 0 auto;
+    border: 3px solid #8B4513; /* Border color to match the background color */
+}
